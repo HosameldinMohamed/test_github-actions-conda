@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: whatever
+          activate-environment: ${GITHUB_WORKSPACE}/whatever
           auto-update-conda: true
       - name: Conda info
         shell: bash -l {0}
