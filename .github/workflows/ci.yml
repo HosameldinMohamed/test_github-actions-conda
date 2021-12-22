@@ -15,7 +15,7 @@ jobs:
         with:
           miniforge-version: latest
           activate-environment: ${GITHUB_WORKSPACE}/whatever
-          remove-profiles: false
+          #remove-profiles: false
       - name: Conda info
         shell: bash -l {0}
         run: conda info
