@@ -13,8 +13,9 @@ jobs:
     steps:
       - uses: conda-incubator/setup-miniconda@v2
         with:
+          miniforge-version: latest
           activate-environment: ${GITHUB_WORKSPACE}/whatever
-          auto-update-conda: true
+          remove-profiles: false
       - name: Conda info
         shell: bash -l {0}
         run: conda info
