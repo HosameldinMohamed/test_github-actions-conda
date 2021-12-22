@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [self-hosted]
+        os: [ubuntu-latest, self-hosted]
     steps:
       - uses: conda-incubator/setup-miniconda@v2
         with:
