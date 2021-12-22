@@ -14,7 +14,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           miniforge-version: latest
-          activate-environment: ${GITHUB_WORKSPACE}/whatever
+          #activate-environment: ${GITHUB_WORKSPACE}/whatever
           #remove-profiles: false
       - name: Conda info
         shell: bash -l {0}
